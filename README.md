@@ -95,6 +95,7 @@ After you're finished please remove all the comments and instructions!
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://crypto-tracker-app.onrender.com/)
+- [Vide explaination Link](https://www.loom.com/share/9ea61cbf21eb46b2b12bf893f7b27a84)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,7 +209,7 @@ I would like to thank
 
 - [x] @Microverse.
 - [x] Nelson Sakwa on Behance for the design.
-- [x] [Coinstats] (coinstats.app) for providing free api.
+- [x] [Coinstats](coinstats.app) for providing free api.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
