@@ -8,7 +8,25 @@ const fetchCrypto = createAsyncThunk(
   async () => {
     const response = await fetch('https://api.coinstats.app/public/v1/coins/');
     const data = await response.json();
-    return data.coins;
+    const coins = data.coins.map((coin) => ({
+      id: coin.id,
+      icon: coin.icon,
+      name: coin.name,
+      symbol: coin.symbol,
+      rank: coin.rank,
+      price: coin.price,
+      volume: coin.volume,
+      marketCap: coin.marketCap,
+      availableSupply: coin.availableSupply,
+      totalSupply: coin.totalSupply,
+      pricechange1h: coin.priceChange1h,
+      pricechange1d: coin.priceChange1d,
+      pricechange1w: coin.priceChange1w,
+      url: coin.websiteUrl,
+      show: false,
+
+    }));
+    return coins;
   },
 );
 
@@ -19,7 +37,19 @@ const cryptoSlice = createSlice({
     crypto: [],
     isEror: false,
   },
-  reducers: {},
+  reducers: {
+    getdetails: (state, action) => {
+      const id = action.payload;
+      state.crypto = state.crypto.map((coin) => {
+        if (coin.id === id) {
+          coin.show = true;
+        } else {
+          coin.show = false;
+        }
+        return coin;
+      });
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchCrypto.pending, (state) => {
       state.isLoding = true;
@@ -35,5 +65,6 @@ const cryptoSlice = createSlice({
   },
 });
 
+export const { getdetails } = cryptoSlice.actions;
 export { fetchCrypto };
 export default cryptoSlice.reducer;
