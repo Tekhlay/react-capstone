@@ -50,15 +50,24 @@ const Details = () => {
               </tr>
               <tr>
                 <th>Price change / hours</th>
-                <td>{coin.pricechange1h}</td>
+                <td>
+                  {coin.pricechange1h}
+                  %
+                </td>
               </tr>
               <tr>
                 <th>Price Change/ day</th>
-                <td>{coin.pricechange1d}</td>
+                <td>
+                  {coin.pricechange1d}
+                  %
+                </td>
               </tr>
               <tr>
                 <th>Price Change/week</th>
-                <td>{coin.pricechange1w}</td>
+                <td>
+                  {coin.pricechange1w}
+                  %
+                </td>
               </tr>
               <tr>
                 <th>Available Supply</th>

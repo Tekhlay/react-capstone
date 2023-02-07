@@ -51,9 +51,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Space Travele Hub] <a name="about-project"></a>
+# 📖 [Crypto Tracker] <a name="about-project"></a>
 
-**Space Travele Hub** is a Single page application. It is developed using React Library and redux store. It allows users to reserve available rockets, see thieir mission status and profile.
+**Crypto Tracker** Best global Coin Price Tracker in the Market With Crypto Tracker, you can manage all your crypto assets from one interface. It is a Single page application. It is developed using React Library and redux store. It allows users see current market value and price of different global digital currencies and search for a specfic digital coin. The system also generates full description of a spesfied crypto currency.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -84,10 +84,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **Display List of rockets**
-- **Display Mission list**
-- **Check profile status**
-- **Make online reservation**
+- **Display List of Digital crypto currencies**
+- **Search and filter coins**
+- **See details of the filtered coin**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,7 +94,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://space-travelers-hub-b216.onrender.com/)
+- [Live Demo Link](https://crypto-tracker-app.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,7 +121,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Kashif-Saleem-Ghuman/react-group-project.git
+  git clone https://github.com/Tekhlay/react-capstone.git
 ```
 
 ### Install
@@ -178,9 +177,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add Dragons page**
-- [ ] **FUll website development**
-- [ ] **Test and Deploy**
+- [ ] **Add buy crypto page**
+- [ ] **Add sell crypto page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -190,7 +188,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Kashif-Saleem-Ghuman/react-group-project/issues/).
+Feel free to check the [issues page](https://github.com/Tekhlay/react-capstone/issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,7 +204,11 @@ If you like this project please give a⭐️ and share with your friends.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank @Microverse.
+I would like to thank
+
+- [x] @Microverse.
+- [x] Nelson Sakwa on Behance for the design.
+- [x] [Coinstats] (coinstats.app) for providing free api.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

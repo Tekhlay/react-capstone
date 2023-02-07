@@ -15,7 +15,7 @@ const Nav = () => (
     </div>
     <div className="nav-center">
       <img src={logo} alt="Crypto logo" width="50px" />
-      <p> Global Crypto Forcast Metrics</p>
+      <p> Crypto Tracker App</p>
     </div>
     <div className="nav-right">
       <NavLink to="/"><FaMicrophone className="icons" /></NavLink>
