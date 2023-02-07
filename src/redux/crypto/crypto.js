@@ -10,7 +10,7 @@ const fetchCryptoData = (data) => ({
 
 // Thunk Creators
 const fetchCryptoDataThunk = () => async (dispatch) => {
-  const response = await fetch('https://api.coincap.io/v2/assets');
+  const response = await fetch('https://api.coinstats.app/public/v1/coins');
   const data = await response.json();
   dispatch(fetchCryptoData(data.data));
 };
