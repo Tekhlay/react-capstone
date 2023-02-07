@@ -19,7 +19,7 @@ const Details = () => {
     <div className="details-container">
       {filteredCoins.map((coin) => (
         <>
-          <div key={coin.id} className="container-card">
+          <div key={coin.id} className="details-card">
             <img src={coin.icon} alt={coin.name} />
           </div>
           <table key={coin.id}>
@@ -38,7 +38,7 @@ const Details = () => {
               </tr>
               <tr>
                 <th>Price</th>
-                <td>{coin.price}</td>
+                <td>{coin.price.toFixed(5)}</td>
               </tr>
               <tr>
                 <th>Market Cap</th>
@@ -71,8 +71,8 @@ const Details = () => {
               <tr>
                 <th>Reference</th>
                 <td>
-                  <a href="{coin.url}">
-                    Web address
+                  <a href={coin.url}>
+                    Official Website
                   </a>
 
                 </td>

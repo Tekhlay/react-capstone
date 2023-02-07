@@ -39,11 +39,16 @@ const Home = () => {
         {!filteredCoins.length && <h1><em>No related coins found!</em></h1>}
         {filteredCoins.map((coin) => (
           <div key={coin.id} className="container-card">
-            <h1>{coin.name}</h1>
             <img src={coin.icon} alt={coin.name} />
-            <h1>{coin.price}</h1>
+            <div className="container-card-info">
+              <h1>{coin.name}</h1>
+              <p>
+                Price: $
+                {coin.price.toFixed(2)}
+              </p>
+            </div>
             <NavLink to={`/details/${coin.id}`}>
-              <FaArrowAltCircleRight />
+              <FaArrowAltCircleRight className="link" />
             </NavLink>
           </div>
         ))}
