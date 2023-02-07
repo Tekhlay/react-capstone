@@ -1,32 +1,39 @@
-// Action Types
-const FETCH_CRYPTO_DATA = 'react-capstone-project/crypto/FETCH_CRYPTO_DATA';
+/* eslint-disable no-param-reassign */
+/* eslint-disable import/no-extraneous-dependencies */
 
-// Action Creators
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const fetchCryptoData = (data) => ({
-  type: FETCH_CRYPTO_DATA,
-  payload: data,
+const fetchCrypto = createAsyncThunk(
+  'crypto/fetchCrypto',
+  async () => {
+    const response = await fetch('https://api.coinstats.app/public/v1/coins/');
+    const data = await response.json();
+    return data.coins;
+  },
+);
+
+const cryptoSlice = createSlice({
+  name: 'crypto',
+  initialState: {
+    isLoding: false,
+    crypto: [],
+    isEror: false,
+  },
+  reducers: {},
+  extraReducers: (builder) => {
+    builder.addCase(fetchCrypto.pending, (state) => {
+      state.isLoding = true;
+    });
+    builder.addCase(fetchCrypto.fulfilled, (state, action) => {
+      state.isLoding = false;
+      state.crypto = action.payload;
+    });
+    builder.addCase(fetchCrypto.rejected, (state) => {
+      state.isLoding = false;
+      state.isEror = true;
+    });
+  },
 });
 
-// Thunk Creators
-const fetchCryptoDataThunk = () => async (dispatch) => {
-  const response = await fetch('https://api.coinstats.app/public/v1/coins');
-  const data = await response.json();
-  dispatch(fetchCryptoData(data.data));
-};
-
-// Reducer
-const initialState = [];
-
-const cryptoReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case FETCH_CRYPTO_DATA:
-      return action.payload;
-    default:
-      return state;
-  }
-};
-
-// Export
-export { fetchCryptoDataThunk };
-export default cryptoReducer;
+export { fetchCrypto };
+export default cryptoSlice.reducer;
