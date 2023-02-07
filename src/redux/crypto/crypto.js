@@ -1,6 +1,5 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable import/no-extraneous-dependencies */
-
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const fetchCrypto = createAsyncThunk(
