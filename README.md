@@ -222,6 +222,6 @@ I would like to thank @Microverse.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Kashif-Saleem-Ghuman/react-group-project/blob/dev/LICENSE) licensed.
+This project is [MIT](https://github.com/Tekhlay/react-capstone/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
