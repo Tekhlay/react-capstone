@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaArrowAltCircleLeft, FaMicrophone } from 'react-icons/fa';

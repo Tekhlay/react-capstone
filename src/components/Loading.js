@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { FaCoins } from 'react-icons/fa';
 import styled from 'styled-components';

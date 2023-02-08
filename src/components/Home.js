@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
@@ -23,9 +22,6 @@ const Home = () => {
   if (coins.isLoding || coins.isEror) {
     return <Loading />;
   }
-  //   if (coins.isEror) {
-  //     return <h1>Something went wrong...</h1>;
-  //   }
 
   return (
     <header className="home-container">
