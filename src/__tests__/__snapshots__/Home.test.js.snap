@@ -18,9 +18,7 @@ exports[`Home renders correctly 1`] = `
     className="home-list"
   >
     <h1>
-      <em>
-        No related coins found!
-      </em>
+      No related coins found!
     </h1>
   </div>
 </header>
